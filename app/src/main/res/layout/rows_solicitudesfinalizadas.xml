@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="SelectableText,SmallSp,RtlHardcoded" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="4dp"
+        tools:ignore="RtlSymmetry,RtlHardcoded" >
+
+        <TextView
+            android:id="@+id/idFolio"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="3dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLdatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/TextFolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/TextFolio"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVContenidoFolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextFolio"
+            android:layout_alignLeft="@+id/tVContenidoFolioInteligente"
+            android:layout_toRightOf="@+id/TextFolio"
+            android:text="@string/ContenidoFolio"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+        <!-- <TextView
+            android:id="@+id/tVFechaCaptura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextFolio"
+            android:layout_below="@+id/TextFolio"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVFechaCaptura"
+            android:textSize="14sp" />-->
+
+        <!-- <TextView
+            android:id="@+id/tVFolioAgencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextFolio"
+            android:layout_below="@+id/TextFolio"
+            android:layout_marginTop="15dp"
+            android:text="@string/tVFolioAgencia"
+            android:textSize="14sp" />-->
+
+		<TextView
+		    android:id="@+id/tVFolioInteligente"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/TextFolio"
+		    android:layout_below="@+id/TextFolio"
+		    android:layout_marginTop="15dp"
+		    android:text="@string/tVFolioInteligente"
+		    android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVContenidoFolioInteligente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVFolioInteligente"
+            android:layout_alignLeft="@+id/tVContenidoNombreCompleto"
+            android:layout_toRightOf="@+id/tVFolioInteligente"
+            android:text="@string/tVContenidoFolioInteligente"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- <TextView
+            android:id="@+id/tVContenidoFolioAgencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tVFolioInteligente"
+            android:layout_alignLeft="@+id/tVContenidoFolioInteligente"
+            android:text="@string/tVContenidoFolioAgencia"
+            android:textSize="16sp"
+            android:textStyle="bold" />-->
+
+        <!-- <TextView
+            android:id="@+id/tVContenidoFechaCaptura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVFechaCaptura"
+            android:layout_alignBottom="@+id/tVFechaCaptura"
+            android:layout_alignLeft="@+id/tVContenidoFolioAgencia"
+            android:text="@string/tVContenidoFechaCaptura"
+            android:textSize="16sp"
+            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/tVNombreCompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextFolio"
+            android:layout_below="@+id/tVFolioInteligente"
+            android:layout_marginTop="15dp"
+            android:text="@string/tVNombreCompleto"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVContenidoNombreCompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVNombreCompleto"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tVNombreCompleto"
+            android:text="@string/tVContenidoNombreCompleto"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

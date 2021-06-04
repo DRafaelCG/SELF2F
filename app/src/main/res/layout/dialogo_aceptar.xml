@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_general">
+
+	<TextView
+	    android:id="@+id/tVTituloDialogo"
+	    android:layout_width="match_parent"
+	    android:layout_height="75dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_weight="0"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="@android:color/black" />
+
+    <View 
+        android:id="@+id/vDivider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/dialog_divider"/>
+    <ScrollView 
+        android:id="@+id/sVMensajeContenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+	<TextView
+	    android:id="@+id/tVContenido"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="5dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textColor="@android:color/black" />
+
+    </ScrollView>
+
+	<LinearLayout
+	    android:id="@+id/lLayoutBotonAceptar"
+	    android:layout_width="match_parent"
+	    android:layout_height="75dp"
+	    android:layout_weight="0" >
+
+	    <Button
+	        android:id="@+id/btnAceptarDialog"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_vertical|center_horizontal"
+	        android:layout_margin="10dp"
+	        android:layout_weight="1"
+	        android:text="@string/btnAceptarDialog"
+	        android:textColor="#FFFFFF"
+	        android:textSize="20sp" />
+
+	</LinearLayout>    
+
+</LinearLayout>

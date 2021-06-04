@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.dim.self2f.Solicitud"
+    tools:ignore="RtlHardcoded,RtlSymmetry" >
+
+    <LinearLayout
+        android:id="@+id/rLControles"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCapBasica"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:clickable="false"
+            android:drawableTop="@mipmap/ic_action_not_important"
+            android:text="@string/btnCapBasica"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btnAutenticacion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btnCapBasica"
+            android:layout_weight=".25"
+            android:clickable="false"
+            android:drawableTop="@mipmap/ic_action_computer"
+            android:text="@string/btnAutenticacion"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btnCapEvaluacion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btnAutenticacion"
+            android:layout_weight=".25"
+            android:clickable="false"
+            android:drawableTop="@mipmap/ic_action_paste"
+            android:text="@string/btnCapEvaluacion"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btnCierreVenta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btnCapEvaluacion"
+            android:layout_weight=".25"
+            android:clickable="false"
+            android:drawableTop="@mipmap/ic_action_user"
+            android:text="@string/btnCierreVenta"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/iCapturaBasica"
+        android:layout_width="match_parent"
+        android:layout_height="1150dp"
+        android:layout_above="@+id/rLControles"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        layout="@layout/captura_basica"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/iAutenticacion"
+        android:layout_width="wrap_content"
+        android:layout_height="1200dp"
+        android:layout_above="@+id/rLControles"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        layout="@layout/autenticacion"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/iCapturaEvaluacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rLControles"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        layout="@layout/captura_evaluacion"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/iCierreVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rLControles"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        layout="@layout/cierre_venta"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/iDictamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rLControles"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/activity_dictamen"
+        android:visibility="invisible" />
+
+</RelativeLayout>

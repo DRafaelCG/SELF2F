@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="SelectableText,SmallSp,RtlHardcoded" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingRight="4dp"
+        tools:ignore="RtlSymmetry,RtlHardcoded" >
+
+        <TextView
+            android:id="@+id/idFolioPend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLdatosPend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/TextFolioPend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/TextFolio"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVContenidoFolioPend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextFolioPend"
+            android:layout_alignLeft="@+id/tVContenidoFolioInteligentePend"
+            android:layout_toRightOf="@+id/TextFolioPend"
+            android:text="@string/ContenidoFolio"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+        <!-- <TextView
+            android:id="@+id/tVFechaCaptura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextFolio"
+            android:layout_below="@+id/TextFolio"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVFechaCaptura"
+            android:textSize="14sp" />-->
+
+        <!-- <TextView
+            android:id="@+id/tVFolioAgencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextFolio"
+            android:layout_below="@+id/TextFolio"
+            android:layout_marginTop="15dp"
+            android:text="@string/tVFolioAgencia"
+            android:textSize="14sp" />-->
+
+		<TextView
+		    android:id="@+id/tVFolioInteligentePend"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/TextFolioPend"
+		    android:layout_below="@+id/TextFolioPend"
+		    android:layout_marginTop="15dp"
+		    android:text="@string/tVFolioInteligente"
+		    android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVContenidoFolioInteligentePend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVFolioInteligentePend"
+            android:layout_alignLeft="@+id/tVContenidoNombreCompletoPend"
+            android:layout_toRightOf="@+id/tVFolioInteligentePend"
+            android:text="@string/tVContenidoFolioInteligente"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- <TextView
+            android:id="@+id/tVContenidoFolioAgencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tVFolioInteligente"
+            android:layout_alignLeft="@+id/tVContenidoFolioInteligente"
+            android:text="@string/tVContenidoFolioAgencia"
+            android:textSize="16sp"
+            android:textStyle="bold" />-->
+
+        <!-- <TextView
+            android:id="@+id/tVContenidoFechaCaptura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVFechaCaptura"
+            android:layout_alignBottom="@+id/tVFechaCaptura"
+            android:layout_alignLeft="@+id/tVContenidoFolioAgencia"
+            android:text="@string/tVContenidoFechaCaptura"
+            android:textSize="16sp"
+            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/tVNombreCompletoPend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextFolioPend"
+            android:layout_below="@+id/tVFolioInteligentePend"
+            android:layout_marginTop="15dp"
+            android:text="@string/tVNombreCompleto"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tVContenidoNombreCompletoPend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVNombreCompletoPend"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tVNombreCompletoPend"
+            android:text="@string/tVContenidoNombreCompleto"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

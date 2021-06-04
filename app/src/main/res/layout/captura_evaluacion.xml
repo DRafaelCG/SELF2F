@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sVCapturaEvaluacion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rLCapEvaluacion"
+        android:layout_width="match_parent"
+        android:layout_height="1100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+            android:id="@+id/tVInstCapEvaluacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tVInstCapEvaluacion"
+            android:textColor="#FF1300"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVTipoVivienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVInstCapEvaluacion"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVTipoVivienda"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVeTTipoViviendaObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTipoVivienda"
+            android:layout_alignBottom="@+id/tVTipoVivienda"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTTipoVivienda"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVAñosAntiguedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVTipoVivienda"
+            android:layout_below="@+id/tVTipoVivienda"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVAñosAntiguedad"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTAñosAntiguedad"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVAñosAntiguedad"
+            android:layout_alignBottom="@+id/tVAñosAntiguedad"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVAñosAntiguedad"
+            android:ems="10"
+            android:hint="@string/hinttVeTAñosAntiguedad"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTTipoVivienda"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTipoVivienda"
+            android:layout_alignBottom="@+id/tVTipoVivienda"
+            android:layout_alignLeft="@+id/eTAñosAntiguedad"
+            android:layout_alignRight="@+id/eTAñosAntiguedad"
+            
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVeTTipoVivienda"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tVDatosOcupacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVAñosAntiguedad"
+            android:layout_below="@+id/tVAñosAntiguedad"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVDatosOcupacion"
+            android:textColor="#FF1300"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVIngresoNetoFijo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVDatosOcupacion"
+            android:layout_below="@+id/tVDatosOcupacion"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVIngresoNetoFijo"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTIngresoNetoFijo"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVIngresoNetoFijo"
+            android:layout_alignBottom="@+id/tVIngresoNetoFijo"
+            android:layout_alignLeft="@+id/eTAñosAntiguedad"
+            android:layout_alignRight="@+id/eTAñosAntiguedad"
+            android:layout_toRightOf="@+id/tVIngresoNetoFijo"
+            android:ems="10"
+            android:hint="@string/hinttVeTIngresoNetoFijo"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVIngresoNetoFijoObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVIngresoNetoFijo"
+            android:layout_alignBottom="@+id/tVIngresoNetoFijo"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTIngresoNetoFijo"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVIngresoNetoVariable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVIngresoNetoFijo"
+            android:layout_below="@+id/tVIngresoNetoFijo"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVIngresoNetoVariable"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTIngresoNetoVariable"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVIngresoNetoVariable"
+            android:layout_alignBottom="@+id/tVIngresoNetoVariable"
+            android:layout_alignLeft="@+id/eTIngresoNetoFijo"
+            android:layout_alignRight="@+id/eTIngresoNetoFijo"
+            android:layout_toRightOf="@+id/tVIngresoNetoVariable"
+            android:ems="10"
+            android:hint="@string/hinttVeTIngresoNetoVariable"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVVentasAnuales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVIngresoNetoVariable"
+            android:layout_below="@+id/tVIngresoNetoVariable"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVVentasAnuales"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTVentasAnuales"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVVentasAnuales"
+            android:layout_alignBottom="@+id/tVVentasAnuales"
+            android:layout_alignLeft="@+id/eTIngresoNetoVariable"
+            android:layout_alignRight="@+id/eTIngresoNetoVariable"
+            android:ems="10"
+            android:hint="@string/hinteTVentasAnuales"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVProfesionistasIndep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVVentasAnuales"
+            android:layout_below="@+id/tVVentasAnuales"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVProfesionistasIndep"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTProfesionistasIndep"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVProfesionistasIndep"
+            android:layout_alignBottom="@+id/tVProfesionistasIndep"
+            android:layout_alignLeft="@+id/eTVentasAnuales"
+            android:layout_alignRight="@+id/eTVentasAnuales"
+            android:ems="10"
+            android:hint="@string/hinteTProfesionistasIndep"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="10dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tVOcupacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVProfesionistasIndep"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVOcupacion"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTOcupacion"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVOcupacion"
+            android:layout_alignBottom="@+id/tVOcupacion"
+            android:layout_alignLeft="@+id/eTProfesionistasIndep"
+            android:layout_alignRight="@+id/eTProfesionistasIndep"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinteTOcupacion"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/tVOcupacionObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVOcupacion"
+            android:layout_alignBottom="@+id/tVOcupacion"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTOcupacion"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/rLayoutOcupacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/eTOcupacion"
+            android:layout_marginTop="5dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tVUniversidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/tVUniversidad"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVUniversidadObl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVUniversidad"
+                android:layout_alignBottom="@+id/tVUniversidad"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/Oblig"
+                android:textColor="#8A0808"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/eTUniversidad"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVUniversidad"
+                android:layout_alignBottom="@+id/tVUniversidad"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/tVUniversidadObl"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/hinteTUniversidad"
+                android:inputType="none"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVCampus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tVUniversidad"
+                android:layout_below="@+id/tVUniversidad"
+                android:layout_marginTop="20dp"
+                android:text="@string/tVCampus"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/eTCampus"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVCampus"
+                android:layout_alignBottom="@+id/tVCampus"
+                android:layout_alignLeft="@+id/eTUniversidad"
+                android:layout_alignRight="@+id/eTUniversidad"
+                android:layout_toRightOf="@+id/tVCampus"
+                android:ems="10"
+                android:hint="@string/hinteTCampus"
+                android:inputType="none"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVCampusObl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVCampus"
+                android:layout_alignBottom="@+id/tVCampus"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/eTCampus"
+                android:text="@string/Oblig"
+                android:textColor="#8A0808"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/eTCarrera"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVCarrera"
+                android:layout_alignBottom="@+id/tVCarrera"
+                android:layout_alignLeft="@+id/eTUniversidad"
+                android:layout_alignRight="@+id/eTUniversidad"
+                android:layout_toRightOf="@+id/tVCarrera"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/hinteTCarrera"
+                android:inputType="none"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVCarreraObl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVCarrera"
+                android:layout_alignBottom="@+id/tVCarrera"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/eTCarrera"
+                android:text="@string/Oblig"
+                android:textColor="#8A0808"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVCarrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tVCampus"
+                android:layout_below="@+id/eTCampus"
+                android:layout_marginTop="20dp"
+                android:text="@string/tVCarrera"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVTipoFinanciamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tVCarrera"
+                android:layout_below="@+id/eTCarrera"
+                android:layout_marginTop="20dp"
+                android:text="@string/tVTipoFinanciamiento"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/eTTipoFinanciamiento"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVTipoFinanciamiento"
+                android:layout_alignBottom="@+id/tVTipoFinanciamiento"
+                android:layout_alignLeft="@+id/eTCarrera"
+                android:layout_alignRight="@+id/eTCarrera"
+                android:layout_toRightOf="@+id/tVTipoFinanciamiento"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/hinteTTipoFinanciamiento"
+                android:inputType="none"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVTipoFinanciamientoObl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVTipoFinanciamiento"
+                android:layout_alignBottom="@+id/tVTipoFinanciamiento"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/eTTipoFinanciamiento"
+                android:text="@string/Oblig"
+                android:textColor="#8A0808"
+                android:textSize="20sp" />
+            
+            <RelativeLayout
+                android:id="@+id/rLayoutBeca"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tVTipoFinanciamiento"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tVBeca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tVTipoFinanciamiento"
+                    android:layout_below="@+id/eTTipoFinanciamiento"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/tVBeca"
+                    android:textSize="20sp" />
+
+		            <EditText
+		                android:id="@+id/eTBeca"
+		                android:layout_width="260dp"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBaseline="@+id/tVBeca"
+		                android:layout_alignBottom="@+id/tVBeca"
+		                android:layout_marginRight="20dp"
+		                android:layout_toLeftOf="@+id/tVBecaObl"
+		                android:hint="@string/hinteTBeca"
+		                android:inputType="number"
+		                android:maxLength="3"
+		                android:paddingLeft="10dp"
+		                android:textSize="20sp" />
+
+		            <TextView
+		                android:id="@+id/tVBecaObl"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBaseline="@+id/tVBeca"
+		                android:layout_alignBottom="@+id/tVBeca"
+		                android:layout_alignParentRight="true"
+		                android:layout_marginRight="15dp"
+		                android:text="@string/Oblig"
+		                android:textColor="#8A0808"
+		                android:textSize="20sp" />
+            
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tVGradoEscolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rLayoutBeca"
+                android:layout_alignLeft="@+id/tVTipoFinanciamiento"
+                android:layout_marginTop="20dp"
+                android:text="@string/tVGradoEscolar"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/eTGradoEscolar"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVGradoEscolar"
+                android:layout_alignBottom="@+id/tVGradoEscolar"
+                android:layout_alignLeft="@+id/eTTipoFinanciamiento"
+                android:layout_alignRight="@+id/eTTipoFinanciamiento"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/hinteTGradoEscolar"
+                android:inputType="none"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVGradoEscolarObl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tVGradoEscolar"
+                android:layout_alignBottom="@+id/tVGradoEscolar"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/Oblig"
+                android:textColor="#8A0808"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tVLadaEmpleo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVProfesionistasIndep"
+            android:layout_below="@+id/rLayoutOcupacion"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVLadaEmpleo"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTLadaEmpleo"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVLadaEmpleo"
+            android:layout_alignBottom="@+id/tVLadaEmpleo"
+            android:layout_alignLeft="@+id/eTProfesionistasIndep"
+            android:layout_alignRight="@+id/eTProfesionistasIndep"
+            android:layout_toRightOf="@+id/tVLadaEmpleo"
+            android:ems="10"
+            android:hint="@string/hinteTLadaEmpleo"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVTelEmpleo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVLadaEmpleo"
+            android:layout_below="@+id/tVLadaEmpleo"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVTelEmpleo"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTTelEmpleo"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTelEmpleo"
+            android:layout_alignBottom="@+id/tVTelEmpleo"
+            android:layout_alignLeft="@+id/eTLadaEmpleo"
+            android:layout_alignRight="@+id/eTLadaEmpleo"
+            android:layout_toRightOf="@+id/tVTelEmpleo"
+            android:ems="10"
+            android:hint="@string/hinteTTelEmpleo"
+            android:inputType="number"
+            android:maxLength="7"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVExtension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVTelEmpleo"
+            android:layout_below="@+id/tVTelEmpleo"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVExtension"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTExtension"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVExtension"
+            android:layout_alignBottom="@+id/tVExtension"
+            android:layout_alignLeft="@+id/eTTelEmpleo"
+            android:layout_alignRight="@+id/eTTelEmpleo"
+            android:layout_toRightOf="@+id/tVExtension"
+            android:ems="10"
+            android:hint="@string/hinteTExtension"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVAñosAntiguedadEmpleo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVExtension"
+            android:layout_below="@+id/tVExtension"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVAñosAntiguedadEmpleo"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTAñosAntiguedadEmpleo"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVAñosAntiguedadEmpleo"
+            android:layout_alignBottom="@+id/tVAñosAntiguedadEmpleo"
+            android:layout_alignLeft="@+id/eTExtension"
+            android:layout_alignRight="@+id/eTExtension"
+            android:layout_toRightOf="@+id/tVAñosAntiguedadEmpleo"
+            android:ems="10"
+            android:hint="@string/hinteTAñosAntiguedadEmpleo"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVCorreoElectronico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVAñosAntiguedadEmpleo"
+            android:layout_below="@+id/tVAñosAntiguedadEmpleo"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVCorreoElectronico"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTCorreoElectronico"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVCorreoElectronico"
+            android:layout_alignBottom="@+id/tVCorreoElectronico"
+            android:layout_alignLeft="@+id/eTAñosAntiguedadEmpleo"
+            android:layout_alignRight="@+id/eTAñosAntiguedadEmpleo"
+            android:layout_toRightOf="@+id/tVCorreoElectronico"
+            android:ems="10"
+            android:hint="@string/hinteTCorreoElectronico"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVCorreoElectronicoObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVCorreoElectronico"
+            android:layout_alignBottom="@+id/tVCorreoElectronico"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTCorreoElectronico"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVTelCelular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVCorreoElectronico"
+            android:layout_below="@+id/tVCorreoElectronico"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVTelCelular"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTTelCelular"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTelCelular"
+            android:layout_alignBottom="@+id/tVTelCelular"
+            android:layout_alignLeft="@+id/eTCorreoElectronico"
+            android:layout_alignRight="@+id/eTCorreoElectronico"
+            android:layout_toRightOf="@+id/tVTelCelular"
+            android:ems="10"
+            android:hint="@string/hinteTTelCelular"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVTelCelularObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTelCelular"
+            android:layout_alignBottom="@+id/tVTelCelular"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTTelCelular"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnContinuarCapEvaluacion"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/eTTelCelular"
+            android:layout_below="@+id/eTTelCelular"
+            android:layout_marginTop="30dp"
+            android:onClick="cambiaVista"
+            android:text="@string/btnContinuar"
+            android:textColor="#FFFFFF" />
+
+        <!-- <TextView
+            android:id="@+id/tVSucursalPaperless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVTelCelular"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVSucursalPaperless"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTSucursalPaperless"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVSucursalPaperless"
+            android:layout_alignBottom="@+id/tVSucursalPaperless"
+            android:layout_alignLeft="@+id/eTTelCelular"
+            android:layout_alignRight="@+id/eTTelCelular"
+            
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinteTSucursalPaperless"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tVSucursalPaperlessObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVSucursalPaperless"
+            android:layout_alignBottom="@+id/tVSucursalPaperless"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTSucursalPaperless"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVAsignarSucursal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVSucursalPaperless"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tVAsignarSucursal"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/rGAsignarSucursal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eTSucursalPaperless"
+            android:layout_alignTop="@+id/tVAsignarSucursal" >
+
+            <RadioButton
+                android:id="@+id/rUsarDomicilio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rUsarDomicilio"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/rBuscarSucursal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rBuscarSucursal"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tVAsignarSucursal"
+            android:layout_alignRight="@+id/tVSucursalPaperlessObl"
+            android:layout_below="@+id/rGAsignarSucursal"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical|horizontal" >
+
+	</ListView> -->
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <!-- <TextView
+	    android:id="@+id/tvSinExpedientes"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="50dp"s
+	    android:layout_marginRight="50dp"
+	    android:background="@null"
+	    android:gravity="center_horizontal"
+	    android:text="@string/empty" />-->
+    
+	<com.dim.self2f.pulltorefresh.PullToRefreshListView
+	    android:id="@+id/listPendientes"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp"
+		android:numColumns="1"
+    	android:horizontalSpacing="10dp"
+    	android:verticalSpacing="10dp">
+	</com.dim.self2f.pulltorefresh.PullToRefreshListView>
+	<!-- @android:id/list"-->
+</LinearLayout>

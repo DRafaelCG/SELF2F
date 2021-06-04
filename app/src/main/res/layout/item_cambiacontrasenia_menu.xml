@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    tools:ignore="RtlHardcoded" >
+    
+    <ImageView 
+	    android:id="@+id/form"
+	    android:layout_width="412dp"
+	    android:layout_height="94dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="100dp"
+	    android:background="@mipmap/form412x94"/>
+    
+    <ImageView 
+	    android:id="@+id/form2"
+	    android:layout_width="412dp"
+	    android:layout_height="94dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="147dp"
+	    android:background="@mipmap/form412x94"/>
+
+    <TextView
+        android:id="@+id/tVContraseniaAnterior"
+        style="@style/reactivos"
+        android:layout_width="160dp"
+        android:layout_height="47dp"
+        android:layout_alignLeft="@+id/form"
+        android:layout_alignTop="@+id/form"
+        android:gravity="center_vertical"
+	    android:layout_marginTop="100dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="0dp"
+        android:text="@string/tVContraseniaAnterior" />
+    
+    <EditText
+	    android:id="@+id/eTContraseniaAnterior"
+	    style="@style/textField"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp"
+	    android:layout_toRightOf="@+id/tVContraseniaAnterior"
+	    android:layout_alignTop="@+id/tVContraseniaAnterior"
+	    android:ems="10"
+	    android:inputType="textPassword">
+
+	    <requestFocus />
+	</EditText>
+	<!-- android:fontFamily="sans-serif"-->
+
+	<TextView
+	    android:id="@+id/tVContraseniaNueva"
+        style="@style/reactivos"
+        android:layout_width="160dp"
+        android:layout_height="47dp"
+        android:gravity="center_vertical"
+	    android:layout_alignLeft="@+id/tVContraseniaAnterior"
+	    android:layout_below="@+id/tVContraseniaAnterior"
+	    android:text="@string/tVContraseniaNueva" />
+	
+	<EditText
+	    android:id="@+id/eTContraseniaNueva"
+	    style="@style/textField"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp"
+        
+	    android:layout_toRightOf="@+id/tVContraseniaNueva"
+	    android:layout_alignTop="@+id/tVContraseniaNueva"
+	    android:ems="10"
+	    android:inputType="textPassword" />
+	<!-- android:fontFamily="sans-serif"-->
+	<TextView
+	    android:id="@+id/tVConfirmarContrasenia"
+        style="@style/reactivos"
+        android:layout_width="160dp"
+        android:layout_height="47dp"
+        android:gravity="center_vertical"
+	    android:layout_alignLeft="@+id/tVContraseniaNueva"
+	    android:layout_below="@+id/tVContraseniaNueva"
+	    android:text="@string/tVConfirmarContrasenia" />
+
+
+	<EditText
+	    android:id="@+id/eTConfirmarContrasenia"
+	    style="@style/textField"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp"
+        
+	    android:layout_toRightOf="@+id/tVConfirmarContrasenia"
+	    android:layout_alignTop="@+id/tVConfirmarContrasenia"
+	    android:ems="10"
+	    android:inputType="textPassword" />
+	<!-- android:fontFamily="sans-serif"-->
+
+	<Button
+	    android:id="@+id/btnCambiarPwd"
+	    style="@style/inputRed"
+	    android:layout_below="@+id/eTConfirmarContrasenia"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="40dp"
+	    android:text="@string/btnCambiarPwd" />
+
+</RelativeLayout>

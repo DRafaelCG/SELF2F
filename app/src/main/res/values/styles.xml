@@ -1,0 +1,89 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="AppTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="inputWhite">
+        <item name="android:layout_width">222dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#FF1300</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@drawable/inputwhite</item>
+    </style>
+    <style name="inputRed">
+        <item name="android:layout_width">222dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@drawable/inputred</item>
+    </style>
+    <style name="textFieldLogin">
+        <item name="android:layout_width">222dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@drawable/inputwhite</item>
+    </style>
+    <style name="textField">
+        <item name="android:layout_width">330dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:background">@drawable/textfield</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="textFieldStroke">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:background">@drawable/textfield_stroke	</item>
+    </style>
+    <style name="navigationBar">
+        <item name="android:background">#FF1300</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:height">53dp</item>
+    </style>
+    <style name="instrucciones">
+        <item name="android:width">600dp</item>
+        <item name="android:textColor">#FF1300</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:height">40dp</item>
+    </style>
+    <style name="reactivos">
+        <item name="android:width">190dp</item>
+        <item name="android:height">30dp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Theme_Dialog_Translucent" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="myBorderView">
+        <!-- 3dp so the background border to be visible -->
+        <item name="android:background">@drawable/borde</item>
+    </style>
+
+</resources>

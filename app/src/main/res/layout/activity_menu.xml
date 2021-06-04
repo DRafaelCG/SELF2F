@@ -1,0 +1,239 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    tools:context="com.dim.self2f.Menu"
+    tools:ignore="RtlHardcoded,RtlSymmetry" >
+
+    <RelativeLayout
+        android:id="@+id/rLayoutMenu"
+        style="@style/myBorderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="#E9E9E9" >
+
+        <TextView
+            android:id="@+id/tVTituloMenu"
+            style="@style/myBorderView"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/bttnInicio"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/tVTituloMenu"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:background="#FF1300"/>
+
+        <Button
+            android:id="@+id/bttnInicio"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignRight="@+id/bttnSolicitudesPendientes"
+            android:layout_below="@+id/tVTituloMenu"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/icon_house_alt"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:onClick="cambiaVista"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:text="@string/btnInicio" />
+
+        <Button
+            android:id="@+id/bttnNvaSolicitud"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignRight="@+id/bttnInicio"
+            android:layout_below="@+id/bttnInicio"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/icon_clipboard"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:onClick="cambiaVista"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:text="@string/btnNvaSolicitud" />
+
+        <Button
+            android:id="@+id/bttnSolicitudesPendientes"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/bttnNvaSolicitud"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/icon_drawer_alt"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:onClick="cambiaVista"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:text="@string/btnSolicitudesPendientes" />
+
+        <Button
+            android:id="@+id/bttnSolicitudesFinalizadas"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignRight="@+id/bttnSolicitudesPendientes"
+            android:layout_below="@+id/bttnSolicitudesPendientes"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/arrow_rightup"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:onClick="cambiaVista"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:text="@string/btnSolicitudesFinalizadas" />
+
+        <Button
+            android:id="@+id/bttnCambiarContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignRight="@+id/bttnSolicitudesFinalizadas"
+            android:layout_below="@+id/bttnSolicitudesFinalizadas"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/icon_cog"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:onClick="cambiaVista"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:text="@string/btnCambiarContrasenia" />
+
+        <Button
+            android:id="@+id/bttnActualizarCatalogos"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignRight="@+id/bttnCambiarContrasenia"
+            android:layout_below="@+id/bttnCambiarContrasenia"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/refresh"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:onClick="cambiaVista"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:text="@string/btnActualizarCatalogos" />
+
+        <Button
+            android:id="@+id/bttnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignRight="@+id/bttnActualizarCatalogos"
+            android:layout_below="@+id/bttnActualizarCatalogos"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/icon_close"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:onClick="cambiaVista"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#666666"
+            android:textSize="17sp"
+            android:text="@string/btnCerrarSesion" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLayoutContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rLayoutMenu"
+        style="@style/myBorderView">
+
+        <TextView
+            android:id="@+id/tVTituloItemMenu"
+            style="@style/myBorderView"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/tVTituloItemMenu"
+            android:textColor="#FFFFFF"
+            android:background="#FF1300"
+            android:textSize="17sp" />
+
+        <include
+            android:id="@+id/iInicio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tVTituloItemMenu"
+            layout="@layout/item_inicio_menu"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/iCambiarContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            layout="@layout/item_cambiacontrasenia_menu"
+            android:layout_below="@+id/tVTituloItemMenu"
+            android:visibility="invisible"/>
+        <include
+            android:id="@+id/iSolicitudesFinalizadas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            layout="@layout/item_solicitudesfinalizadas_menu"
+            android:layout_below="@+id/tVTituloItemMenu"
+            android:visibility="invisible"/>
+
+        <include
+            android:id="@+id/iSolicitudesPendientes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tVTituloItemMenu"
+            layout="@layout/item_solicitudespendientes_menu"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/iActualizarCatalogos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            layout="@layout/item_actualizarcatalogos_menu"
+            android:layout_below="@+id/tVTituloItemMenu"
+            android:visibility="invisible"/>
+
+        <include
+            android:id="@+id/iCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tVTituloItemMenu"
+            layout="@layout/item_cerrarsesion_menu"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

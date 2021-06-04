@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sVCapturaBasica"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical|horizontal"
+    tools:ignore="UnusedAttribute,RtlSymmetry,RtlHardcoded" >
+
+    <RelativeLayout
+        android:id="@+id/rLCapBasica"
+        android:layout_width="match_parent"
+        android:layout_height="1150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tVInstrucciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/tVInstrucciones"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVApPaterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVInstrucciones"
+            android:layout_alignLeft="@+id/tVInstrucciones"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVApPaterno"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTApPaterno"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVApPaterno"
+            android:layout_alignLeft="@+id/eTfechaNac"
+            android:layout_alignRight="@+id/eTfechaNac"
+            android:layout_alignBottom="@+id/tVApPaterno"
+            android:layout_toRightOf="@+id/tVApPaterno"
+            android:ems="10"
+            android:hint="@string/hinttVApPaterno"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tVApPaternoObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVApPaterno"
+            android:layout_alignBottom="@+id/tVApPaterno"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTApPaterno"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVApMaterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVApPaterno"
+            android:layout_alignLeft="@+id/tVApPaterno"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVApMaterno"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTApMaterno"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVApMaterno"
+            android:layout_alignLeft="@+id/eTApPaterno"
+            android:layout_alignRight="@+id/eTApPaterno"
+            android:layout_alignBottom="@+id/tVApMaterno"
+            android:ems="10"
+            android:hint="@string/hinttVApMaterno"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tVpNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVApMaterno"
+            android:layout_alignLeft="@+id/tVApMaterno"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVpNombre"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTpNombre"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVpNombre"
+            android:layout_alignLeft="@+id/eTApMaterno"
+            android:layout_alignRight="@+id/eTApMaterno"
+            android:layout_alignBottom="@+id/tVpNombre"
+            android:ems="10"
+            android:hint="@string/hinttVpNombre"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tVpNombreObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVpNombre"
+            android:layout_alignBottom="@+id/tVpNombre"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTpNombre"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVsNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVpNombre"
+            android:layout_alignLeft="@+id/tVpNombre"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVsNombre"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTsNombre"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVsNombre"
+            android:layout_alignLeft="@+id/eTpNombre"
+            android:layout_alignRight="@+id/eTpNombre"
+            android:layout_alignBottom="@+id/tVsNombre"
+            android:ems="10"
+            android:hint="@string/hinttVsNombre"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tVestadoCivil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVsNombre"
+            android:layout_alignLeft="@+id/tVsNombre"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVestadoCivil"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTestadoCivil"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVestadoCivil"
+            android:layout_alignLeft="@+id/eTsNombre"
+            android:layout_alignRight="@+id/eTsNombre"
+            android:layout_alignBottom="@+id/tVestadoCivil"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVestadoCivil"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVestadoCivilObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVestadoCivil"
+            android:layout_alignBottom="@+id/tVestadoCivil"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTestadoCivil"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVsexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVestadoCivil"
+            android:layout_alignLeft="@+id/tVestadoCivil"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVsexo"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTsexo"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVsexo"
+            android:layout_alignLeft="@+id/eTestadoCivil"
+            android:layout_alignRight="@+id/eTestadoCivil"
+            android:layout_alignBottom="@+id/tVsexo"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVsexo"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVsexoObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVsexo"
+            android:layout_alignBottom="@+id/tVsexo"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTsexo"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVfechaNac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVsexo"
+            android:layout_alignLeft="@+id/tVsexo"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVfechaNac"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTfechaNac"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVfechaNac"
+            android:layout_alignLeft="@+id/eTDelegacion"
+            android:layout_alignRight="@+id/eTDelegacion"
+            android:layout_alignBottom="@+id/tVfechaNac"
+            android:layout_toRightOf="@+id/tVfechaNac"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVfechaNac"
+            android:inputType="none"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVfechaNacObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVfechaNac"
+            android:layout_alignBottom="@+id/tVfechaNac"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTfechaNac"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVNacionalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVfechaNac"
+            android:layout_alignLeft="@+id/tVfechaNac"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVNacionalidad"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTNacionalidad"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVNacionalidad"
+            android:layout_alignLeft="@+id/eTfechaNac"
+            android:layout_alignRight="@+id/eTfechaNac"
+            android:layout_alignBottom="@+id/tVNacionalidad"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVNacionalidad"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVNacionalidadObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVNacionalidad"
+            android:layout_alignBottom="@+id/tVNacionalidad"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTNacionalidad"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVRFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVFormaMigratoria"
+            android:layout_alignLeft="@+id/tVFormaMigratoria"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVRFC"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTRFC"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVRFC"
+            android:layout_alignLeft="@+id/eTNacionalidad"
+            android:layout_alignRight="@+id/eTNacionalidad"
+            android:layout_alignBottom="@+id/tVRFC"
+            android:editable="false"
+            android:ems="10"
+            android:hint="@string/hinttVRFC"
+            android:inputType="text"
+            android:maxLength="13"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tVRFCObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVRFC"
+            android:layout_alignBottom="@+id/tVRFC"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTRFC"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVCalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVRFC"
+            android:layout_alignLeft="@+id/tVRFC"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVCalle"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTCalle"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVCalle"
+            android:layout_alignLeft="@+id/eTRFC"
+            android:layout_alignRight="@+id/eTRFC"
+            android:layout_alignBottom="@+id/tVCalle"
+            android:editable="false"
+            android:ems="10"
+            android:hint="@string/hinttVCalle"
+            android:inputType="text"
+            android:maxLength="34"
+            android:paddingLeft="10dp"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVCalleObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVCalle"
+            android:layout_alignBottom="@+id/tVCalle"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTCalle"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVNumExterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVCalle"
+            android:layout_alignLeft="@+id/tVCalle"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVNumExterior"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTNumExterior"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVNumExterior"
+            android:layout_alignLeft="@+id/eTCalle"
+            android:layout_alignRight="@+id/eTCalle"
+            android:layout_alignBottom="@+id/tVNumExterior"
+            android:editable="false"
+            android:ems="10"
+            android:hint="@string/hinttVNumExterior"
+            android:inputType="text"
+            android:maxLength="8"
+            android:paddingLeft="10dp"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVNumExteriorObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVNumExterior"
+            android:layout_alignBottom="@+id/tVNumExterior"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTNumExterior"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVNumInterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVNumExterior"
+            android:layout_alignLeft="@+id/tVNumExterior"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVNumInterior"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTNumInterior"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVNumInterior"
+            android:layout_alignLeft="@+id/eTNumExterior"
+            android:layout_alignRight="@+id/eTNumExterior"
+            android:layout_alignBottom="@+id/tVNumInterior"
+            android:editable="false"
+            android:ems="10"
+            android:hint="@string/hinttVNumInterior"
+            android:inputType="text"
+            android:maxLength="6"
+            android:paddingLeft="10dp"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVCodigoPostal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVNumInterior"
+            android:layout_alignLeft="@+id/tVNumInterior"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVCodigoPostal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTCodigoPostal"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVCodigoPostal"
+            android:layout_alignLeft="@+id/eTNumInterior"
+            android:layout_alignRight="@+id/eTNumInterior"
+            android:layout_alignBottom="@+id/tVCodigoPostal"
+            android:editable="false"
+            android:ems="10"
+            android:hint="@string/hinttVCodigoPostal"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVCodigoPostalObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVCodigoPostal"
+            android:layout_alignBottom="@+id/tVCodigoPostal"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTCodigoPostal"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVColonia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVCodigoPostal"
+            android:layout_alignLeft="@+id/tVCodigoPostal"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVColonia"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTColonia"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVColonia"
+            android:layout_alignLeft="@+id/eTCodigoPostal"
+            android:layout_alignRight="@+id/eTCodigoPostal"
+            android:layout_alignBottom="@+id/tVColonia"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/hinttVColonia"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVColoniaObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVColonia"
+            android:layout_alignBottom="@+id/tVColonia"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTColonia"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVDelegacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVColonia"
+            android:layout_alignLeft="@+id/tVColonia"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVDelegacion"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTDelegacion"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVDelegacion"
+            android:layout_alignBottom="@+id/tVDelegacion"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tVDelegacion"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVDelegacion"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVDelegacionObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVDelegacion"
+            android:layout_alignBottom="@+id/tVDelegacion"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTDelegacion"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVDelegacion"
+            android:layout_alignLeft="@+id/tVDelegacion"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVEstado"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVEstadoObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVEstado"
+            android:layout_alignBottom="@+id/tVEstado"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTEstado"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVLadaDom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVEstado"
+            android:layout_alignLeft="@+id/tVEstado"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVLadaDom"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVLadaDomObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVLadaDom"
+            android:layout_alignBottom="@+id/tVLadaDom"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTLadaDom"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVTelDom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVLadaDom"
+            android:layout_alignLeft="@+id/tVLadaDom"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVTelDom"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVTelDomObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTelDom"
+            android:layout_alignBottom="@+id/tVTelDom"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTTelDom"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVTipoProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVTelDomObl"
+            android:layout_alignLeft="@+id/tVTelDom"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVTipoProducto"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVTipoProductoOblig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTipoProducto"
+            android:layout_alignBottom="@+id/tVTipoProducto"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTTipoProducto"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnContinuarCapturaBasica"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/eTTipoProducto"
+            android:layout_alignRight="@+id/eTTipoProducto"
+            android:layout_marginTop="30dp"
+            android:onClick="cambiaVista"
+            android:text="@string/btnContinuar"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/eTEstado"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVEstado"
+            android:layout_alignLeft="@+id/eTDelegacion"
+            android:layout_alignBottom="@+id/tVEstado"
+            android:layout_toLeftOf="@+id/tVDelegacionObl"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVEstado"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTLadaDom"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVLadaDom"
+            android:layout_alignLeft="@+id/eTEstado"
+            android:layout_alignRight="@+id/eTEstado"
+            android:layout_alignBottom="@+id/tVLadaDom"
+            android:layout_toRightOf="@+id/tVLadaDom"
+            android:hint="@string/hinttVLadaDom"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTTelDom"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTelDom"
+            android:layout_alignLeft="@+id/eTLadaDom"
+            android:layout_alignRight="@+id/eTLadaDom"
+            android:layout_alignBottom="@+id/tVTelDom"
+            android:hint="@string/hinttVTelDom"
+            android:inputType="phone"
+            android:maxLength="7"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTTipoProducto"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTipoProducto"
+            android:layout_alignLeft="@+id/eTTelDom"
+            android:layout_alignTop="@+id/tVTipoProducto"
+            android:layout_alignRight="@+id/eTTelDom"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVTipoProducto"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVFormaMigratoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eTNacionalidad"
+            android:layout_alignLeft="@+id/tVNacionalidad"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVFormaMigratoria"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tVFormaMigratoriaObl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tVFormaMigratoria"
+            android:layout_alignRight="@+id/tVNacionalidadObl"
+            android:layout_alignBottom="@+id/tVFormaMigratoria"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTFormaMigratoria"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVFormaMigratoriaObl"
+            android:layout_alignLeft="@+id/eTNacionalidad"
+            android:layout_alignBottom="@+id/tVFormaMigratoriaObl"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinttVFormaMigratoria"
+            android:inputType="none"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

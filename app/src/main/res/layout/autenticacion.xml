@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sVCapturaBasica"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical|horizontal"
+    tools:ignore="UnusedAttribute,RtlSymmetry" >
+
+	<RelativeLayout
+	    xmlns:tools="http://schemas.android.com/tools"
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/rLayoutAutenticacion"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:ignore="RtlHardcoded" >
+
+	    <TextView
+	        android:id="@+id/tVInstAutenticacion"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="45dp"
+	        android:text="@string/tVInstAutenticacion"
+	        android:textSize="24sp" />
+
+	    <TextView
+	        android:id="@+id/tVPreg1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/tVInstAutenticacion"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="140dp"
+	        android:layout_marginTop="50dp"
+	        android:text="@string/tVPreg1"
+	        android:textSize="18sp" />
+
+	    <TextView
+	        android:id="@+id/tVPreg2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tVPreg1"
+	        android:layout_alignRight="@+id/tVPreg1"
+	        android:layout_below="@+id/rLayoutOpcionesPreg1"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/tVPreg2"
+	        android:textSize="18sp" />
+
+	    <TextView
+	        android:id="@+id/tVPreg3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tVPreg2"
+	        android:layout_below="@+id/tVPreg2"
+	        android:layout_marginRight="140dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/tVPreg3"
+	        android:textSize="18sp" />
+
+	    <RelativeLayout
+	        android:id="@+id/rLayoutOpcionesPreg1"
+	        android:layout_width="match_parent"
+	        android:layout_height="80dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/tVPreg1"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp" >
+
+	        <TextView
+	            android:id="@+id/tVPreg1a"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="20dp"
+	            android:text="@string/tVPreg1a"
+	            android:textColor="#000000"
+	            android:textSize="16sp" />
+
+	        <TextView
+	            android:id="@+id/tVUltimos4Digitos"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/tVPreg1a"
+	            android:layout_below="@+id/tVPreg1a"
+	            android:layout_marginTop="20dp"
+	            android:text="@string/tVUltimos4Digitos" />
+
+	        <EditText
+	            android:id="@+id/eTultimos4Digitos"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/tVUltimos4Digitos"
+	            android:layout_alignBottom="@+id/tVUltimos4Digitos"
+	            android:layout_alignRight="@+id/eTtipoTarjetaBancaria"
+	            android:ems="10"
+	            android:hint="@string/hinttVtVUltimos4Digitos"
+	            android:inputType="number"
+	            android:maxLength="4"
+	            android:textSize="14sp" />
+
+	        <EditText
+	            android:id="@+id/eTtipoTarjetaBancaria"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/tVPreg1a"
+	            android:layout_alignBottom="@+id/tVPreg1a"
+	            android:layout_marginLeft="20dp"
+	            android:layout_toRightOf="@+id/tVPreg1a"
+	            android:cursorVisible="false"
+	            android:editable="false"
+	            android:ems="10"
+	            android:focusable="false"
+	            android:hint="@string/hinttVeTtipoTarjetaBancaria"
+	            android:inputType="none"
+	            android:paddingLeft="10dp"
+	            android:textSize="20sp" />
+	    </RelativeLayout>
+
+	    <RadioGroup
+	        android:id="@+id/rGPreg2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/rGPreg1"
+	        android:layout_alignTop="@+id/tVPreg2"
+	        android:orientation="horizontal" >
+
+	        <RadioButton
+	            android:id="@+id/rOpcionSIPreg2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rOpcionSIPreg2"
+	            android:textColor="#000000" />
+
+	        <RadioButton
+	            android:id="@+id/rOpcionNOPreg2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rOpcionNOPreg2"
+	            android:textColor="#000000" />
+	    </RadioGroup>
+
+	    <RadioGroup
+	        android:id="@+id/rGPreg3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/rGPreg1"
+	        android:layout_alignTop="@+id/tVPreg3"
+	        android:orientation="horizontal" >
+
+	        <RadioButton
+	            android:id="@+id/rOpcionSIPreg3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rOpcionSIPreg3"
+	            android:textColor="#000000" />
+
+	        <RadioButton
+	            android:id="@+id/rOpcionNOPreg3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rOpcionNOPreg3"
+	            android:textColor="#000000" />
+	    </RadioGroup>
+
+	    <Button
+	        android:id="@+id/btnContinuarAutenticacion"
+	        android:layout_width="140dp"
+	        android:layout_height="40dp"
+	        android:layout_alignRight="@+id/rGPreg1"
+	        android:layout_below="@+id/tVPreg3"
+	        android:layout_marginTop="30dp"
+	        android:onClick="cambiaVista"
+	        android:text="@string/btnContinuarAutenticacion"
+	        android:textColor="#FFFFFF" />
+
+	    <Button
+	        android:id="@+id/btnCancelarAutenticacion"
+	        android:layout_width="140dp"
+	        android:layout_height="40dp"
+	        android:layout_alignBaseline="@+id/btnContinuarAutenticacion"
+	        android:layout_alignBottom="@+id/btnContinuarAutenticacion"
+	        android:layout_toLeftOf="@+id/btnContinuarAutenticacion"
+	        android:onClick="cambiaVista"
+	        android:text="@string/btnCancelarAutenticacion"
+	        android:textColor="#FFFFFF" />
+
+	    <!--
+             <TextView
+	        android:id="@+id/tVIrInicioCuestionario"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/btnContinuarAutenticacion"
+	        android:layout_below="@+id/btnContinuarAutenticacion"
+	        android:layout_marginTop="30dp"
+	        android:clickable="true"
+	        android:onClick="cambiaVista"
+	        android:text="@string/tVIrInicioCuestionario"
+	        android:textSize="20sp" />
+	    -->
+
+	    <RadioGroup
+	        android:id="@+id/rGPreg1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/rLayoutOpcionesPreg1"
+	        android:layout_alignTop="@+id/tVPreg1"
+	        android:orientation="horizontal" >
+
+	        <RadioButton
+	            android:id="@+id/rOpcionSIPreg1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rOpcionSIPreg1"
+	            android:textColor="#000000" />
+
+	        <RadioButton
+	            android:id="@+id/rOpcionNOPreg1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rOpcionNOPreg1"
+	            android:textColor="#000000" />
+	    </RadioGroup>
+	</RelativeLayout>
+
+</ScrollView>

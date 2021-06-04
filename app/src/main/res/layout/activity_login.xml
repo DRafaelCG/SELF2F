@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dim.self2f.Login"
+    tools:ignore="RtlSymmetry,RtlHardcoded" >
+
+    <RelativeLayout
+        android:id="@+id/rLayoutTitLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/tvTituloLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_activity_login"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/eTusuario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rLayoutTitLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/textHintUser"
+        android:inputType="text"
+        android:maxLength="20"
+        android:minHeight="42dp"
+        android:minWidth="240dp"
+        android:nextFocusForward="@+id/eTpassword"
+        android:paddingLeft="45dp"
+        android:singleLine="true"
+        android:textSize="20sp" >
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/eTpassword"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eTusuario"
+        android:layout_alignRight="@+id/eTusuario"
+        android:layout_below="@+id/eTusuario"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/textHintPwd"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:minHeight="42dp"
+        android:minWidth="240dp"
+        android:paddingLeft="45dp"
+        android:singleLine="true"
+        android:textSize="20sp" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eTpassword"
+        android:layout_alignRight="@+id/eTpassword"
+        android:layout_below="@+id/eTpassword"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:minHeight="42dip"
+        android:minWidth="240dip"
+        android:text="@string/btnLogin"
+        android:textSize="20sp" />
+
+</RelativeLayout>

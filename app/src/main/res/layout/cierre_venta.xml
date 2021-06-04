@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/sVCierreVenta" 
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:id="@+id/rLCierreventa"
+        android:layout_width="match_parent"
+        android:layout_height="1463dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#E9E9E9" >
+        
+<!-- Parrilla e imagenes de fondo -->     
+	<ImageView
+	    android:id="@+id/parrilla"
+	    android:layout_width="540dp"
+	    android:layout_height="800dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="80dp"
+	    android:background="@mipmap/parrilla656x800" />
+	
+	    <ImageView
+	    android:id="@+id/parrilla2"
+	    android:layout_width="540dp"
+	    android:layout_height="800dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="520dp"
+	    android:background="@mipmap/parrilla656x800" />
+	    
+	<View 
+	    android:layout_width="190dp"
+	    android:layout_height="1240dp"
+	    android:background="#70E9E9E9"
+	    android:layout_alignLeft="@id/parrilla"
+	    android:layout_alignTop="@id/parrilla" />
+	<View 
+	    android:layout_width="540dp"
+	    android:layout_height="40dp"
+	    android:background="#70E9E9E9"
+	    android:layout_alignLeft="@id/parrilla"
+	    android:layout_alignTop="@id/parrilla" />
+	<View 
+	    android:layout_width="540dp"
+	    android:layout_height="40dp"
+	    android:background="#70E9E9E9"
+	    android:layout_alignLeft="@+id/tVReferencias1"
+	    android:layout_alignTop="@+id/tVReferencias1" />
+	<View 
+	    android:layout_width="540dp"
+	    android:layout_height="40dp"
+	    android:background="#70E9E9E9"
+	    android:layout_alignLeft="@+id/tVReferencias2"
+	    android:layout_alignTop="@+id/tVReferencias2" />
+	
+<!-- Instrucciones -->
+        <TextView
+            android:id="@+id/tVInstCierreVenta"
+            style="@style/instrucciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVInstCierreVenta" />
+        
+<!-- Campos -->
+<!--         <TextView
+            android:id="@+id/tVDatosdeOcupacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tVInstCierreVenta"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tVDatosdeOcupacion"
+            android:textColor="#FF1300"
+            android:textSize="22sp" /> -->
+
+        <TextView
+            android:id="@+id/tVTipodeOcupacion"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/tVTipodeOcupacion" />
+
+        <TextView
+            android:id="@+id/tVTipodeOcupacionNegocioP"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tVTipodeOcupacion"
+            android:layout_alignTop="@+id/tVTipodeOcupacion"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="16sp"
+            android:text="@string/tVTipodeOcupacionNegocioP" />
+
+		<TextView
+		    android:id="@+id/tVNombreEmpresa"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVTipodeOcupacion"
+		    android:text="@string/tVNombreEmpresa" />
+
+		<EditText
+		    android:id="@+id/eTNombreEmpresa"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVNombreEmpresa"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVNombreEmpresa"
+		    android:ems="10"
+		    android:hint="@string/hinteTNombreEmpresa"
+		    android:inputType="text"
+		    android:maxLength="40"
+		    android:paddingLeft="10dp" />
+
+		<TextView
+		    android:id="@+id/tVCalleEmpresa"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVNombreEmpresa"
+		    android:text="@string/tVCalleEmpresa" />
+
+        <EditText
+            android:id="@+id/eTCalleEmpresa"
+            style="@style/textField"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/tVCalleEmpresa"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVCalleEmpresa"
+            android:ems="10"
+            android:hint="@string/hinteTCalleEmpresa"
+            android:inputType="text"
+            android:maxLength="34"
+            android:paddingLeft="10dp" />
+        
+        <TextView
+		    android:id="@+id/tVNumExtEmpresa"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVCalleEmpresa"
+		    android:text="@string/tVNumExtEmpresa" />
+
+        <EditText
+            android:id="@+id/eTNumExtEmpresa"
+            style="@style/textField"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/tVNumExtEmpresa"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVNumExtEmpresa"
+            android:ems="10"
+            android:hint="@string/hinteTNumExtEmpresa"
+            android:inputType="text"
+            android:maxLength="8"
+            android:paddingLeft="10dp" />
+        
+		<TextView
+		    android:id="@+id/tVNumIntEmpresa"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVNumExtEmpresa"
+		    android:text="@string/tVNumIntEmpresa" />
+
+        <EditText
+            android:id="@+id/eTNumIntEmpresa"
+            style="@style/textField"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/tVNumIntEmpresa"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVNumIntEmpresa"
+            android:ems="10"
+            android:hint="@string/hinteTNumIntEmpresa"
+            android:inputType="text"
+            android:maxLength="6"
+            android:paddingLeft="10dp" />
+        
+        <TextView
+		    android:id="@+id/tVCodigoPostalEmpresa"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVNumIntEmpresa"
+		    android:text="@string/tVCodigoPostalEmpresa" />
+
+        <EditText
+            android:id="@+id/eTCodigoPostalEmpresa"
+            style="@style/textField"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/tVCodigoPostalEmpresa"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVCodigoPostalEmpresa"
+            android:ems="10"
+            android:hint="@string/hinteTCodigoPostalEmpresa"
+            android:inputType="text"
+            android:maxLength="5"
+            android:paddingLeft="10dp" />
+        
+        <TextView
+            android:id="@+id/tVColoniaEmpresa"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVCodigoPostalEmpresa"
+            android:text="@string/tVColoniaEmpresa" />
+
+        <EditText
+            android:id="@+id/eTColoniaEmpresa"
+            style="@style/textField"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/tVColoniaEmpresa"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVColoniaEmpresa"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinteTColoniaEmpresa"
+            android:inputType="none"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tVMunicipioEmpresa"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVColoniaEmpresa"
+            android:text="@string/tVMunicipioEmpresa" />
+
+        <EditText
+            android:id="@+id/eTMunicipioEmpresa"
+            style="@style/textField"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/tVMunicipioEmpresa"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVMunicipioEmpresa"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinteTMunicipioEmpresa"
+            android:inputType="none"
+            android:paddingLeft="10dp" />
+        
+        <TextView
+            android:id="@+id/tVEstadoEmpresa"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVMunicipioEmpresa"
+            android:text="@string/tVEstadoEmpresa" />
+
+        <EditText
+            android:id="@+id/eTEstadoEmpresa"
+            style="@style/textField"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/tVEstadoEmpresa"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tVEstadoEmpresa"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/hinteTEstadoEmpresa"
+            android:inputType="none"
+            android:paddingLeft="10dp" />
+
+		<TextView
+		    android:id="@+id/tVReferencias1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVEstadoEmpresa"
+		    android:text="@string/tVReferencias1"
+		    android:textColor="#000000" />
+		
+		<TextView
+		    android:id="@+id/tVApPaternoRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVReferencias1"
+		    android:text="@string/tVApPaternoRef1" />
+
+		<EditText
+		    android:id="@+id/eTApPaternoRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVApPaternoRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVApPaternoRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTApPaternoRef1"
+		    android:inputType="textPersonName"
+		    android:maxLength="20"
+		    android:paddingLeft="10dp" />
+		
+		<!-- <TextView
+            android:id="@+id/tVApPaternoRef1Obl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVApPaternoRef1"
+            android:layout_alignBottom="@+id/tVApPaternoRef1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTApPaternoRef1"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" /> -->
+		
+		<TextView
+		    android:id="@+id/tVApMaternoRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVApPaternoRef1"
+		    android:text="@string/tVApMaternoRef1" />
+
+		<EditText
+		    android:id="@+id/eTApMaternoRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVApMaternoRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVApMaternoRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTApMaternoRef1"
+		    android:inputType="textPersonName"
+		    android:maxLength="20"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVPrimerNombreRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVApMaternoRef1"
+		    android:text="@string/tVPrimerNombreRef1" />
+
+		<EditText
+		    android:id="@+id/eTPrimerNombreRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVPrimerNombreRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVPrimerNombreRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTPrimerNombreRef1"
+		    android:inputType="textPersonName"
+		    android:maxLength="20"
+		    android:paddingLeft="10dp" />
+
+		<!-- <TextView
+            android:id="@+id/tVPrimerNombreRef1Obl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVPrimerNombreRef1"
+            android:layout_alignBottom="@+id/tVPrimerNombreRef1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTPrimerNombreRef1"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" /> -->
+		
+		<TextView
+		    android:id="@+id/tVSegundoNombreRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVPrimerNombreRef1"
+		    android:text="@string/tVSegundoNombreRef1" />
+
+		<EditText
+		    android:id="@+id/eTSegundoNombreRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVSegundoNombreRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVSegundoNombreRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTSegundoNombreRef1"
+		    android:inputType="textPersonName"
+		    android:maxLength="20"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVLadaDomRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVSegundoNombreRef1"
+		    android:text="@string/tVLadaDomRef1" />
+
+		<EditText
+		    android:id="@+id/eTLadaDomRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVLadaDomRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVLadaDomRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTLadaDomRef1"
+		    android:inputType="number"
+		    android:maxLength="3"
+		    android:paddingLeft="10dp" />
+
+		<!-- <TextView
+            android:id="@+id/tVLadaDomRef1Obl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVLadaDomRef1"
+            android:layout_alignBottom="@+id/tVLadaDomRef1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTLadaDomRef1"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" /> -->
+		
+		<TextView
+		    android:id="@+id/tVTelDomRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVLadaDomRef1"
+		    android:text="@string/tVTelDomRef1" />
+		
+		<EditText
+		    android:id="@+id/eTTelDomRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVTelDomRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVTelDomRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTTelDomRef1"
+		    android:inputType="number"
+		    android:maxLength="7"
+		    android:paddingLeft="10dp" />
+		
+		<!-- <TextView
+            android:id="@+id/tVTelDomRef1Obl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTelDomRef1"
+            android:layout_alignBottom="@+id/tVTelDomRef1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTTelDomRef1"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" /> -->
+		
+		<TextView
+		    android:id="@+id/tVLadaEmpleoRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVTelDomRef1"
+		    android:text="@string/tVLadaEmpleoRef1" />
+
+		<EditText
+		    android:id="@+id/eTLadaEmpleoRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVLadaEmpleoRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVLadaEmpleoRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTLadaEmpleoRef1"
+		    android:inputType="number"
+		    android:maxLength="3"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVTelEmpleoRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVLadaEmpleoRef1"
+		    android:text="@string/tVTelEmpleoRef1" />
+
+		<EditText
+		    android:id="@+id/eTTelEmpleoRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVTelEmpleoRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVTelEmpleoRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTTelEmpleoRef1"
+		    android:inputType="number"
+		    android:maxLength="7"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVExtensionRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVTelEmpleoRef1"
+		    android:text="@string/tVExtensionRef1" />
+
+		<EditText
+		    android:id="@+id/eTExtensionRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVExtensionRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVExtensionRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTExtensionRef1"
+		    android:inputType="number"
+		    android:maxLength="8"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVCelularRef1"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVExtensionRef1"
+		    android:text="@string/tVCelularRef1" />
+		
+		<EditText
+		    android:id="@+id/eTCelularRef1"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVCelularRef1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVCelularRef1"
+		    android:ems="10"
+		    android:hint="@string/hinteTCelularRef1"
+		    android:inputType="number"
+		    android:maxLength="10"
+		    android:paddingLeft="10dp" >
+		</EditText>
+		
+		
+		<TextView
+		    android:id="@+id/tVReferencias2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVCelularRef1"
+		    android:text="@string/tVReferencias2"
+		    android:textColor="#000000" />
+		
+		<TextView
+		    android:id="@+id/tVApPaternoRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVReferencias2"
+		    android:text="@string/tVApPaternoRef2" />
+
+		<EditText
+		    android:id="@+id/eTApPaternoRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVApPaternoRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVApPaternoRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTApPaternoRef2"
+		    android:inputType="textPersonName"
+		    android:maxLength="20"
+		    android:paddingLeft="10dp" />
+		
+		<!-- <TextView
+            android:id="@+id/tVApPaternoRef2Obl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVApPaternoRef2"
+            android:layout_alignBottom="@+id/tVApPaternoRef2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTApPaternoRef2"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" /> -->
+		
+		<TextView
+		    android:id="@+id/tVApMaternoRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVApPaternoRef2"
+		    android:text="@string/tVApMaternoRef2" />
+
+		<EditText
+		    android:id="@+id/eTApMaternoRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVApMaternoRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVApMaternoRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTApMaternoRef2"
+		    android:inputType="textPersonName"
+		    android:maxLength="20"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVPrimerNombreRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVApMaternoRef2"
+		    android:text="@string/tVPrimerNombreRef2" />
+
+		<EditText
+		    android:id="@+id/eTPrimerNombreRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVPrimerNombreRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVPrimerNombreRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTPrimerNombreRef2"
+		    android:inputType="textPersonName"
+		    android:maxLength="20"
+		    android:paddingLeft="10dp" />
+
+		<!-- <TextView
+            android:id="@+id/tVPrimerNombreRef2Obl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVPrimerNombreRef2"
+            android:layout_alignBottom="@+id/tVPrimerNombreRef2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTPrimerNombreRef2"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" /> -->
+		
+		<TextView
+		    android:id="@+id/tVSegundoNombreRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVPrimerNombreRef2"
+		    android:text="@string/tVSegundoNombreRef2" />
+
+		<EditText
+		    android:id="@+id/eTSegundoNombreRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVSegundoNombreRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVSegundoNombreRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTSegundoNombreRef2"
+		    android:inputType="textPersonName"
+		    android:maxLength="20"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVLadaDomRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVSegundoNombreRef2"
+		    android:text="@string/tVLadaDomRef2" />
+
+		<EditText
+		    android:id="@+id/eTLadaDomRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVLadaDomRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVLadaDomRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTLadaDomRef2"
+		    android:inputType="number"
+		    android:maxLength="3"
+		    android:paddingLeft="10dp" />
+
+		<!-- <TextView
+            android:id="@+id/tVLadaDomRef2Obl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVLadaDomRef2"
+            android:layout_alignBottom="@+id/tVLadaDomRef2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTLadaDomRef2"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" /> -->
+		
+		<TextView
+		    android:id="@+id/tVTelDomRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVLadaDomRef2"
+		    android:text="@string/tVTelDomRef2" />
+
+		<EditText
+		    android:id="@+id/eTTelDomRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVTelDomRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVTelDomRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTTelDomRef2"
+		    android:inputType="number"
+		    android:maxLength="7"
+		    android:paddingLeft="10dp" />
+
+		<!-- <TextView
+            android:id="@+id/tVTelDomRef2Obl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tVTelDomRef2"
+            android:layout_alignBottom="@+id/tVTelDomRef2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/eTTelDomRef2"
+            android:text="@string/Oblig"
+            android:textColor="#8A0808"
+            android:textSize="20sp" /> -->
+		
+		<TextView
+		    android:id="@+id/tVLadaEmpleoRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVTelDomRef2"
+		    android:text="@string/tVLadaEmpleoRef2" />
+
+		<EditText
+		    android:id="@+id/eTLadaEmpleoRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVLadaEmpleoRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVLadaEmpleoRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTLadaEmpleoRef2"
+		    android:inputType="number"
+		    android:maxLength="3"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVTelEmpleoRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVLadaEmpleoRef2"
+		    android:text="@string/tVTelEmpleoRef2" />
+
+		<EditText
+		    android:id="@+id/eTTelEmpleoRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVTelEmpleoRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVTelEmpleoRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTTelEmpleoRef2"
+		    android:inputType="number"
+		    android:maxLength="7"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVExtensionRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVTelEmpleoRef2"
+		    android:text="@string/tVExtensionRef2" />
+
+		<EditText
+		    android:id="@+id/eTExtensionRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVExtensionRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVExtensionRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTExtensionRef2"
+		    android:inputType="number"
+		    android:maxLength="8"
+		    android:paddingLeft="10dp" />
+		
+		<TextView
+		    android:id="@+id/tVCelularRef2"
+            style="@style/reactivos"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tVExtensionRef2"
+		    android:text="@string/tVCelularRef2" />
+
+		<EditText
+		    android:id="@+id/eTCelularRef2"
+		    style="@style/textField"
+		    android:layout_width="330dp"
+		    android:layout_height="30dp"
+		    android:layout_alignTop="@+id/tVCelularRef2"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/tVCelularRef2"
+		    android:ems="10"
+		    android:hint="@string/hinteTCelularRef2"
+		    android:inputType="number"
+		    android:maxLength="10"
+		    android:paddingLeft="10dp" />
+		
+		<Button
+	        android:id="@+id/btnTerminarCierreVenta"
+	        style="@style/inputRed"
+            android:layout_width="222dp"
+            android:layout_height="40dp"
+	    	android:layout_centerHorizontal="true"
+	    	android:layout_marginTop="40dp"
+	    	android:layout_below="@+id/tVCelularRef2"
+	        android:onClick="cambiaVista"
+	        android:text="@string/btnTerminarCierreVenta" />
+	
+	    <Button
+	        android:id="@+id/btnCancelarCierreVenta"
+	        style="@style/inputRed"
+            android:layout_width="222dp"
+            android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@+id/btnTerminarCierreVenta"
+	    
+	        android:onClick="cambiaVista"
+	        android:text="@string/btnCancelarCierreVenta" />
+	    
+	    
+	    
+            
+            
+            
+
+	</RelativeLayout>    
+</ScrollView>

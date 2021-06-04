@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dim.self2f.Dictamen"
+    tools:ignore="RtlHardcoded" >
+
+    <TextView
+        android:id="@+id/tVTitleSolConcluida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/tVTitleSolConcluida"
+        android:textColor="#FF1300"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tVDictamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tVTitleSolConcluida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/tVDictamen"
+        android:textColor="#FF1300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tVEtiquetaFolioAgencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tVDictamen"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/tVEtiquetaFolioAgencia"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tVEtiquetaEstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVEtiquetaNombreCompletoDictamen"
+        android:layout_below="@+id/tVEtiquetaNombreCompletoDictamen"
+        android:layout_marginTop="30dp"
+        android:text="@string/tVEtiquetaEstatus"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tVEtiquetaFolioInteligente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVEtiquetaFolioAgencia"
+        android:layout_below="@+id/tVEtiquetaFolioAgencia"
+        android:layout_marginTop="30dp"
+        android:text="@string/tVEtiquetaFolioInteligente"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tVEtiquetaNombreCompletoDictamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVEtiquetaFolioInteligente"
+        android:layout_below="@+id/tVEtiquetaFolioInteligente"
+        android:layout_marginTop="30dp"
+        android:text="@string/tVNombreCompleto"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tVEtiquetaDictamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVEtiquetaEstatus"
+        android:layout_below="@+id/tVEtiquetaEstatus"
+        android:layout_marginTop="30dp"
+        android:text="@string/tVEtiquetaDictamen"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tVEtiquetaSituacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVEtiquetaDictamen"
+        android:layout_below="@+id/tVEtiquetaDictamen"
+        android:layout_marginTop="30dp"
+        android:text="@string/tVEtiquetaSituacion"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tVEtiquetaFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tVEtiquetaSituacion"
+        android:layout_below="@+id/tVEtiquetaSituacion"
+        android:layout_marginTop="30dp"
+        android:text="@string/tVEtiquetaFecha"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tVContFolioAgencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tVEtiquetaFolioAgencia"
+        android:layout_alignBottom="@+id/tVEtiquetaFolioAgencia"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/tVEtiquetaFolioAgencia"
+        android:text="@string/tVContFolioAgencia"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tVContFolioInteligente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tVEtiquetaFolioInteligente"
+        android:layout_alignBottom="@+id/tVEtiquetaFolioInteligente"
+        android:layout_alignLeft="@+id/tVContFolioAgencia"
+        android:text="@string/tVContFolioInteligente"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tVContNombreCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tVEtiquetaNombreCompletoDictamen"
+        android:layout_alignBottom="@+id/tVEtiquetaNombreCompletoDictamen"
+        android:layout_alignLeft="@+id/tVContFolioInteligente"
+        android:text="@string/tVContNombreCompleto"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tVContEstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tVEtiquetaEstatus"
+        android:layout_alignBottom="@+id/tVEtiquetaEstatus"
+        android:layout_alignLeft="@+id/tVContNombreCompleto"
+        android:text="@string/tVContEstatus"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tVContDictamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tVEtiquetaDictamen"
+        android:layout_alignBottom="@+id/tVEtiquetaDictamen"
+        android:layout_alignLeft="@+id/tVContEstatus"
+        android:text="@string/tVContDictamen"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tVContSituacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tVEtiquetaSituacion"
+        android:layout_alignBottom="@+id/tVEtiquetaSituacion"
+        android:layout_alignLeft="@+id/tVContDictamen"
+        android:text="@string/tVContSituacion"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tVContFechaDictamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tVEtiquetaFecha"
+        android:layout_alignBottom="@+id/tVEtiquetaFecha"
+        android:layout_alignLeft="@+id/tVContSituacion"
+        android:text="@string/tVContFechaDictamen"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bttnContinuarDictamen"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tVContFechaDictamen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/bttnContinuarDictamen" />
+
+</RelativeLayout>
